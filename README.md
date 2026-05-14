@@ -1,92 +1,112 @@
-# ClickOffres AutoBot
+# 🤖 ClickOffres AutoBot
 
-Application desktop automatisée pour QA/testing legal de formulaires web.
-Usage: legal QA/testing uniquement (pas de spoofing, pas de bypass, pas de fake traffic).
+> **Automated desktop application for QA/legal testing of web forms.**  
+> *Usage: legal QA/testing only — no spoofing, no bypass, no fake traffic.*
 
-## Installation
+[![Python](https://img.shields.io/badge/Python-3.10%2B-2563eb?style=flat&logo=python)](https://python.org)
+[![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat)]()
+[![Telegram](https://img.shields.io/badge/Telegram-werlist99-3b82f6?style=flat&logo=telegram)](https://t.me/werlist99)
 
-### 1. Installer les dépendances Python
+---
 
+## 📦 Installation
+
+### 1️⃣ Install Python dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Installer le navigateur Playwright
-
+### 2️⃣ Install Playwright browser
 ```bash
 playwright install chromium
 ```
 
-## Utilisation
+---
 
-### Lancer l'application
+## 🚀 Usage
 
 ```bash
 python app.py
 ```
 
-### Dashboard navigation
+### 🧭 Dashboard Navigation
 
-- `General`: profile name/group/tags/remark, user data fields, cookies editor
-- `Proxy Center`: runtime proxy, proxy list, checker, saved working proxies, best proxy, CSV export
-- `Platform`: device profile + fill mode + analyze/preview/fill/submit + field mapping
-- `Session`: open login session, save/load session snapshot, pull/apply cookies
-- `Reports`: run history and JSON export
-- `Logs`: runtime log stream
+| Panel | Description |
+|-------|-------------|
+| 📋 **General** | Profile name, user data fields, cookies editor |
+| 🌐 **Proxy Center** | Runtime proxy, proxy list, checker, saved working proxies, best proxy, CSV export |
+| ⚙️ **Platform** | Device profile + fill mode + analyze/preview/fill/submit + field mapping |
+| 🔐 **Session** | Open login session, save/load session snapshot, pull/apply cookies |
+| 📊 **Reports** | Run history and JSON export |
+| 📝 **Logs** | Runtime log stream |
 
-### Workflow rapide
+### ⚡ Quick Workflow
 
-1. Remplir les données dans `Dashboard`
-2. (Optionnel) Configurer/checker proxies dans `Proxy Center`
-3. Sauvegarder profile/template dans `Profile Studio`
-4. Entrer URL cible puis `Analyze`
-5. Vérifier mapping, lancer `Preview` puis `Fill Form`
-6. `Submit` si nécessaire
+1. 📝 Fill in the data in **General**
+2. 🌐 (Optional) Configure/check proxies in **Proxy Center**
+3. 💾 Save profile/template to **Profile Studio**
+4. 🔗 Enter target URL then **Analyze**
+5. ✅ Check mapping, launch **Preview** → **Fill Form**
+6. 📬 **Submit** if necessary
 
-### Key features
+---
 
-- AdsPower-like layout avec sidebar et panels modulaires
-- Device profiles standards: Windows / macOS / Android / iOS
-- Fill mode: `random` / `sequential`
-- Proxy Center avec:
-  - list management (formats multiples)
-  - checker automatique (OK/FAIL, IP, latence)
-  - best proxy auto-apply
-  - export CSV des résultats
-- Profile Studio avec:
-  - save/load/delete profiles
-  - import/export JSON
-  - template presets + save current as template
-- Preview mode avant remplissage réel
-- Login session optionnelle avant Analyze
+## ✨ Key Features
 
-### Build .exe (Windows)
+- 🎯 **AdsPower-like layout** — sidebar + modular panels
+- 📱 **Device profiles** — Windows, macOS, Android, iOS, Linux
+- 🔀 **Fill modes** — `random` / `sequential`
+- 🛡️ **Proxy Center** — list management, auto-checker (OK/FAIL, IP, latency), best proxy auto-apply, CSV export
+- 🧑‍💻 **Profile Studio** — save/load/delete profiles, import/export JSON, template presets
+- 👁️ **Preview mode** — before actual filling
+- 🔑 **Login session** — optional session before Analyze
+- 🤖 **Smart Run** — multi-device automated run with proxy rotation
+- 🧠 **AI Auto Map** — intelligent field matching
+- 🎲 **Fake Data Generator** — bulk profile generation with country presets
 
-```bat
+---
+
+## 📂 Supported Fields
+
+| Category | Fields |
+|----------|--------|
+| 👤 Identity | First name, Last name, Full name, Gender, Date of birth |
+| 📧 Contact | Email, Phone, Address, City, Zip code, Country |
+| 💼 Professional | Company, Job title, Website, LinkedIn |
+| 📄 Documents | Message/Cover letter, CV upload |
+| 🔐 Account | Username, Password |
+
+---
+
+## 🔧 Build .exe (Windows)
+
+```batch
 build_release.bat
 ```
 
-Le binaire sera généré dans `dist/ClickOffresAutoBot.exe`.
+The binary will be generated in `dist/ClickOffresAutoBot.exe`.
 
-### Champs supportés
+---
 
-- Prénom / Nom / Nom complet
-- Email
-- Téléphone
-- Adresse / Ville / Code postal / Pays
-- Entreprise / Poste
-- Site web / LinkedIn
-- Message / Lettre de motivation
-- CV (upload de fichier)
-- Username / Password
-- Date de naissance / Genre
+## 📁 Persistence Files
 
-### Persistence files
+| File | Description |
+|------|-------------|
+| `user_data.json` | User data |
+| `proxy_config.json` | Current runtime proxy |
+| `proxy_list.json` | Proxy list + saved working proxies |
+| `profiles.json` | Complete profiles |
+| `templates.json` | Templates Profile Studio |
+| `sessions/*.json` | Session snapshots (storage state) |
+| `run_history.json` | Run reports history |
 
-- `user_data.json`: données utilisateur
-- `proxy_config.json`: runtime proxy actuel
-- `proxy_list.json`: proxy list + saved working proxies
-- `profiles.json`: profils complets
-- `templates.json`: templates Profile Studio
-- `sessions/*.json`: session snapshots (storage state)
-- `run_history.json`: run reports history
+---
+
+## 🧑‍💻 Contact
+
+**Telegram: [werlist99](https://t.me/werlist99)**
+
+---
+
+> ⚠️ **Legal Notice** — This tool is intended for legitimate QA testing only.  
+> Unauthorized use for bypassing security, scraping without consent, or any illegal activity is strictly prohibited.

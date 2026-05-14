@@ -17,6 +17,7 @@ from form_engine import AnalysisResult, DEVICE_PROFILES, FIELD_PATTERNS, FormEng
 from profile_studio import ProfileStudioStore
 from proxy_center import ProxyCheckResult, export_proxy_results_csv, normalize_proxy_entries, parse_proxy_line, pick_best_proxy
 from ui_theme import THEME
+from PIL import Image
 
 DATA_FILE = Path(__file__).parent / "user_data.json"
 PROXY_FILE = Path(__file__).parent / "proxy_config.json"
@@ -400,9 +401,15 @@ class App(ctk.CTk):
         self.title("ClickOffres AutoBot")
         self.geometry("1400x860")
         self.minsize(1180, 740)
-        ctk.set_appearance_mode("light")
+        ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
         self.configure(fg_color=THEME.bg_main)
+        ico = Path(__file__).parent / "icon.ico"
+        if ico.exists():
+            try:
+                self.iconbitmap(str(ico))
+            except Exception:
+                pass
 
         self.engine = FormEngine()
         self.analysis_result: AnalysisResult | None = None

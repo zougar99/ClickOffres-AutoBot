@@ -33,6 +33,8 @@ echo Building executable...
   --name "ClickOffresAutoBot" ^
   --add-data "user_data.json;." ^
   --add-data "proxy_config.json;." ^
+  --add-data "icon.ico;." ^
+  --add-data "icon.png;." ^
   --hidden-import "customtkinter" ^
   --hidden-import "PIL" ^
   --collect-submodules "playwright" ^
