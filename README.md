@@ -66,7 +66,7 @@ python app.py
 build_release.bat
 ```
 
-Le binaire sera généré dans `dist/ClickOffres.exe`.
+Le binaire sera généré dans `dist/ClickOffresAutoBot.exe`.
 
 ### Champs supportés
 
