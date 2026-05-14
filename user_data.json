@@ -1,0 +1,21 @@
+{
+  "first_name": "Rania",
+  "last_name": "Fernandez",
+  "full_name": "Rania Fernandez",
+  "email": "rania.fernandez1593@demo-mail.test",
+  "phone": "+130580101716",
+  "address": "334 Liberty Avenue",
+  "city": "Los Angeles",
+  "zip_code": "772744",
+  "country": "United States",
+  "company": "Zenith Labs",
+  "job_title": "QA Tester",
+  "website": "https://rania.fernandez1593.sandbox-site.test",
+  "linkedin": "https://linkedin.com/in/rania.fernandez-1593",
+  "username": "rania.fernandez1593",
+  "password": "Demo_22Ra!973",
+  "date_of_birth": "1996-06-20",
+  "gender": "Male",
+  "message": "Generated sample profile for form validation and workflow checks.",
+  "cv_upload": ""
+}

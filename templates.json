@@ -1,0 +1,45 @@
+{
+  "Developer Basic": {
+    "settings": {
+      "device_profile": "Windows",
+      "fill_mode": "sequential"
+    },
+    "user_data": {
+      "job_title": "Software Engineer || Backend Developer"
+    }
+  },
+  "default": {
+    "settings": {
+      "device_profile": "Windows",
+      "selected_devices": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS",
+        "Linux"
+      ],
+      "fill_mode": "random"
+    },
+    "user_data": {
+      "first_name": "Omar",
+      "last_name": "Dubois",
+      "full_name": "Omar Dubois",
+      "email": "omar.dubois4299@qa-mail.test",
+      "phone": "+131016694239",
+      "address": "242 Sunset Boulevard",
+      "city": "New York",
+      "zip_code": "906615",
+      "country": "United States",
+      "company": "Pixel Forge",
+      "job_title": "Backend Intern",
+      "website": "https://omar.dubois4299.sandbox-site.test",
+      "linkedin": "https://linkedin.com/in/omar.dubois-4299",
+      "username": "omar.dubois4299",
+      "password": "Stage_12Om!550",
+      "date_of_birth": "2004-03-12",
+      "gender": "Male",
+      "message": "Hello, this is generated fake data for legal QA testing.",
+      "cv_upload": ""
+    }
+  }
+}
